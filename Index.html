@@ -7,7 +7,7 @@
     <title>Projeto Web</title>
 </head>
 <link rel="stylesheet" href="style.css">
-
+<script src="script.js" defer></script>
 <body>
 
     <header id="menu-superior">
@@ -16,23 +16,23 @@
         </div>
 
         <div id="botoes-menu-superior">
-            <button class="botao-novo-quadro">+ Novo Quadro</button>
-            <button id="botao-config"></button>
+            <button class="botao-novo-quadro button">+ Novo Quadro</button>
+            <button id="botao-config" class="button"></button>
         </div>
     </header>
 
-    <aside id="menu-lateral">
+    <aside id="menu-lateral" class="menu-aberto">
 
         <div>
-            <button id="botao-fechar-menu"><img src="./img/icon-exibir-recolher-menu.png" alt="icone de exibir ou recolher menu"></button>
+            <button id="botao-fechar-menu" class="button"><img class="icon-fechar-menu" src="./img/icon-exibir-recolher-menu.png" alt="icone de exibir ou recolher menu" ></button>
 
             <nav>
                 <ul>
-                    <li><a href="#">Meus Quadros</a></li>
-                    <li><a href="#">Configurações</a></li>
-                    <li><a href="#">Importar</a></li>
-                    <li><a href="#">Exportar</a></li>
-                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#"><img src="./img/icon-home.png" alt="">Meus Quadros</a></li>
+                    <li><a href="#"><img src="./img/icon-config-cinza-claro.png" alt="">Configurações</a></li>
+                    <li><a href="#"><img src="./img/icon-import.png" alt="">Importar</a></li>
+                    <li><a href="#"><img src="./img/icon-export.png" alt="">Exportar</a></li>
+                    <li><a href="#"><img src="./img/icon-help.png" alt="">Ajuda</a></li>
                 </ul>
             </nav>
         </div>

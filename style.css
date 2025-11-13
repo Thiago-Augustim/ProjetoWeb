@@ -4,6 +4,9 @@
     --cor-azul: #7AA2DA;
 }
 
+.button:hover {
+    filter: brightness(0.8);
+}
 
 body {
     font-family: 'inter', sans-serif;
@@ -65,9 +68,12 @@ aside {
     max-width: 13em;
     min-height: 85vh;
     display: flex;
-
     background-color: var(--cor-cinza-escuro);
+    text-wrap: nowrap;
+    overflow: hidden;
+    transition:  0.4s ease-out;
 }
+
 
 aside div {
     box-sizing: border-box;
@@ -112,10 +118,15 @@ aside div nav {
 
 
 aside#menu-lateral div ul li a {
-    padding: 0 0 0 2em;
+    padding: 0 0 0 1.5em;
     min-width: 100%;
     text-decoration: none;
     color: #E1E1E1;
+}
+aside#menu-lateral div ul li a img {
+    width: 1em;
+    height: 1em;
+    margin-right: 1.5em;
 }
 
 #botao-fechar-menu {
@@ -134,3 +145,14 @@ aside#menu-lateral div ul li a {
     height: 1em;
     
 }
+.menu-fechado {
+    max-width: 4em;;
+}
+
+#menu-lateral div button img.icon-abrir-menu {
+    rotate: 0deg;
+    /* align-self: flex-end; */
+    margin: 0.5em auto auto 1.5em;
+    width: 1em;
+    height: 1em;
+} 
