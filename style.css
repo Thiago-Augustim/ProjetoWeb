@@ -5,10 +5,10 @@ body {
 }
 
 #menu-superior {
-    min-height: 3em;
+    height: 15vh;
     background-color: #f0f2f5;
     color: white;
-    padding: .5rem;
+    /* padding: .5rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@ body {
 }
 
 
-#menu-superior img{
+#menu-superior img {
     height: 4em;
 }
 
@@ -41,7 +41,7 @@ body {
     border-radius: 0.3rem;
 }
 
-#menu-superior button#botao-config{
+#menu-superior button#botao-config {
     margin: auto 1em auto auto;
     height: 2em;
     width: 2em;
@@ -49,7 +49,53 @@ body {
     background-size: cover;
     border: none;
     cursor: pointer;
-    
+
+}
+
+/* MENU LATERAL---------------------------------------------------------------*/
+
+aside {
+    max-width: 15em;
+    min-height: 85vh;
+    display: flex;
+
+    background-color: #767676;
+}
+
+aside nav {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 
+
+#menu-lateral nav ul {
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+}
+
+#menu-lateral ul li {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    min-height: 4em;
+}
+
+#menu-lateral ul li:hover {
+    cursor: pointer;
+    background-color: #969696;
+}
+
+
+aside#menu-lateral ul li a {
+    padding: 0 0 0 2em;
+    min-width: 100%;
+    text-decoration: none;
+    color: #E1E1E1;
+}
