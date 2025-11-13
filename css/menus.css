@@ -15,6 +15,7 @@ body {
 }
 
 #menu-superior {
+    /* position: fixed; */
     height: 13vh;
     background-color: var(--cor-cinza-claro);
     color: white;
@@ -30,6 +31,7 @@ body {
     gap: 1em;
     flex-wrap: wrap;
 }
+
 
 
 #menu-superior img {
@@ -51,11 +53,11 @@ body {
     border-radius: 0.3rem;
 }
 
-#menu-superior button#botao-config {
+#menu-superior button#botao-config{
     margin: auto 1em auto auto;
     height: 2em;
     width: 2em;
-    background-image: url('./img/icon-config.png');
+    background-image: url('/img/icon-config.png');
     background-size: cover;
     border: none;
     cursor: pointer;
@@ -65,13 +67,14 @@ body {
 /* MENU LATERAL---------------------------------------------------------------*/
 
 aside {
-    max-width: 13em;
+    position: fixed;
+    width: 13em;
     min-height: 85vh;
     display: flex;
     background-color: var(--cor-cinza-escuro);
     text-wrap: nowrap;
     overflow: hidden;
-    transition:  0.4s ease-out;
+    transition: 0.4s ease-out;
 }
 
 
@@ -146,7 +149,8 @@ aside#menu-lateral div ul li a img {
     
 }
 .menu-fechado {
-    max-width: 4em;;
+    max-width: 4em;
+    
 }
 
 #menu-lateral div button img.icon-abrir-menu {
