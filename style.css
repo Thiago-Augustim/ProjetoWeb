@@ -1,0 +1,55 @@
+body {
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#menu-superior {
+    min-height: 3em;
+    background-color: #f0f2f5;
+    color: white;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#botoes-menu-superior {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+#menu-superior img{
+    height: 4em;
+}
+
+
+#menu-superior button.botao-novo-quadro {
+    background-color: #7AA2DA;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+#menu-superior button#botao-config{
+    margin: auto 1em auto auto;
+    height: 2em;
+    width: 2em;
+    background-image: url('./img/icon-config.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
