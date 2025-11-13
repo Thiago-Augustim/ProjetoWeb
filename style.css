@@ -12,7 +12,7 @@ body {
 }
 
 #menu-superior {
-    height: 15vh;
+    height: 13vh;
     background-color: var(--cor-cinza-claro);
     color: white;
     /* padding: .5rem; */
@@ -62,30 +62,41 @@ body {
 /* MENU LATERAL---------------------------------------------------------------*/
 
 aside {
-    max-width: 15em;
+    max-width: 13em;
     min-height: 85vh;
     display: flex;
 
     background-color: var(--cor-cinza-escuro);
 }
 
-aside nav {
+aside div {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    padding: 1em 0;
+    min-height: 87vh;
+}
+
+aside div nav {
     min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
 
 }
 
 
 
-#menu-lateral nav ul {
+#menu-lateral div nav ul {
     box-sizing: border-box;
     padding: 0;
     width: 100%;
 }
 
-#menu-lateral ul li {
+#menu-lateral div nav ul li {
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -94,15 +105,32 @@ aside nav {
     min-height: 3em;
 }
 
-#menu-lateral ul li:hover {
+#menu-lateral div nav ul li:hover {
     cursor: pointer;
     background-color: #969696;
 }
 
 
-aside#menu-lateral ul li a {
+aside#menu-lateral div ul li a {
     padding: 0 0 0 2em;
     min-width: 100%;
     text-decoration: none;
     color: #E1E1E1;
+}
+
+#botao-fechar-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 0.5em 1.5em 0 auto;
+}
+
+#menu-lateral div button img {
+    rotate: 180deg;
+    /* align-self: flex-end; */
+    margin: 0.5em auto auto 1.5em;
+    width: 1em;
+    height: 1em;
+    
 }
