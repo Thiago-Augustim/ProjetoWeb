@@ -1,3 +1,10 @@
+:root {
+    --cor-cinza-escuro: #767676;
+    --cor-cinza-claro: #f0f2f5;
+    --cor-azul: #7AA2DA;
+}
+
+
 body {
     font-family: 'inter', sans-serif;
     font-size: 1rem;
@@ -6,7 +13,7 @@ body {
 
 #menu-superior {
     height: 15vh;
-    background-color: #f0f2f5;
+    background-color: var(--cor-cinza-claro);
     color: white;
     /* padding: .5rem; */
     display: flex;
@@ -28,7 +35,7 @@ body {
 
 
 #menu-superior button.botao-novo-quadro {
-    background-color: #7AA2DA;
+    background-color: var(--cor-azul);
     border: none;
     color: white;
     padding: 0.5rem 1rem;
@@ -59,7 +66,7 @@ aside {
     min-height: 85vh;
     display: flex;
 
-    background-color: #767676;
+    background-color: var(--cor-cinza-escuro);
 }
 
 aside nav {
@@ -84,7 +91,7 @@ aside nav {
     display: flex;
     align-items: center;
     list-style: none;
-    min-height: 4em;
+    min-height: 3em;
 }
 
 #menu-lateral ul li:hover {
