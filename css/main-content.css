@@ -1,11 +1,12 @@
 .janela-central{
     height: 87vh;
-    margin-left: 13em;
-    background-color: blue;
+    margin-left: 13em; 
+    /* background-color: blue; */
+    transition: 300ms ease-out;
 }
 p{
     margin: 0;
 }
 .janela-menu-fechado{
-    margin-left: 4em;
+    margin-left: 4em; 
 }

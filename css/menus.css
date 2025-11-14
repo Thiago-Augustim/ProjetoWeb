@@ -35,7 +35,8 @@ body {
 
 
 #menu-superior img {
-    height: 4em;
+    height: 5em;
+    margin-left: 1em;
 }
 
 
@@ -74,7 +75,7 @@ aside {
     background-color: var(--cor-cinza-escuro);
     text-wrap: nowrap;
     overflow: hidden;
-    transition: 0.4s ease-out;
+    transition: 300ms ease-out;
 }
 
 
@@ -86,6 +87,7 @@ aside div {
     justify-content: flex-start ;
     padding: 1em 0;
     min-height: 87vh;
+    
 }
 
 aside div nav {
@@ -149,7 +151,7 @@ aside#menu-lateral div ul li a img {
     
 }
 .menu-fechado {
-    max-width: 4em;
+    width: 4em;
     
 }
 
